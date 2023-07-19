@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="jpg" href="logo-icon.png">
+    <meta charset="utf-8">
+    <title>Postulación Trabajo</title>
+    <link rel="stylesheet" href="estiloi.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .header {
+            margin-bottom: 1rem;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-control {
+            margin-bottom: 1rem;
+        }
+
+        .boton {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Postulación Trabajo</h1>
+        </div>
+        <form id="form" class="form" enctype="multipart/form-data">
+            <div class="form-control">
+                <label>Nombre</label>
+                <input type="text" class="inputs" id="nombre" placeholder="Ingrese su nombre" required>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Apellido</label>
+                <input type="text" class="inputs" id="apellido" placeholder="Ingrese su apellido" required>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" class="inputs" id="email" placeholder="Ingrese su correo electrónico" required>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Número de cédula</label>
+                <input type="text" class="inputs" id="cedula" placeholder="Ingrese su número de cédula" required>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Carrera</label>
+                <select id="carrera" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="Ingeniería de Software">Ingeniería de Software</option>
+                    <option value="Ingeniería en TI">Ingeniería en TI</option>
+                    <option value="Ingeniería en Sistemas">Ingeniería en Sistemas</option>
+                </select>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Subir Archivo (Word o PDF)</label>
+                <input type="file" id="archivo" accept=".doc, .docx, .pdf" required>
+                <small>Tamaño máximo: 25MB</small>
+            </div>
+            <div class="form-control">
+                <button type="button" onclick="confirmarSubirArchivo()">Subir</button>
+            </div>
+        </form>
+        <script>
+            function confirmarSubirArchivo() {
+                var archivo = document.getElementById('archivo').files[0];
+                if (archivo && archivo.size <= 25 * 1024 * 1024) {
+                    var respuesta = confirm('¿Seguro que desea subir el archivo?');
+                    if (respuesta) {
+                        window.location.href = 'homestudiante.html';
+                    }
+                } else {
+                    alert('El archivo seleccionado excede el tamaño máximo permitido (25MB)');
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

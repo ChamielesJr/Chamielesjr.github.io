@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <link rel="icon" type="jpg" href="logo-icon.png">
+    <meta charset="utf-8">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="estilol.css">
+</head>
+<body>
+
+<form id="form" class="form">
+    <h1 class="mensaje">Ingresa a tu cuenta</h1>
+
+    <div class="content">
+        <label>Usuario</label>
+        <input type="text" id="cedula" class="ingreso" placeholder="Ingrese su cédula">
+        <small id="mensaje"></small>
+    </div>
+
+    <div class="content">
+        <label>Contraseña</label>
+        <input type="password" class="ingreso" id="password" placeholder="Ingrese su contraseña">
+    </div>
+
+    <input class="boton" type="button" value="Ingresar" onclick="validarUsuario()">
+    <h1><a href="#">¿Olvidó la contraseña?</a></h1>
+    <h1 class="texto">¿No tienes cuenta? <a href="index.html">Registrate</a></h1>
+</form>
+
+<script>
+function validarUsuario() {
+  var cedula = document.getElementById('cedula').value;
+  
+  if (cedula.length === 11) {
+    var tipo = cedula.charAt(0);
+    var numero = cedula.substr(1);
+
+    if (tipo === 'U') {
+      // Usuario regular
+      window.location.href = 'homestudiante.html';
+    } else if (tipo === 'A') {
+      // Página de administrador
+      window.location.href = 'Home_Administrador.html';
+    } else {
+      mostrarMensaje('La cédula ingresada no es válida.');
+    }
+  } else {
+    mostrarMensaje('La cédula debe contener 11 caracteres.');
+  }
+}
+
+function mostrarMensaje(mensaje) {
+  var mensajeDiv = document.getElementById('mensaje');
+  mensajeDiv.innerHTML = mensaje;
+  if (mensaje === 'La cédula ingresada no es válida.') {
+    alert('Las iniciales "U" y "A" deben estar en mayúsculas.');
+  }
+}
+</script>
+
+</body>
+</html>

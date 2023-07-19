@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+background-color: white;
+
+}
+.form-control{
+    margin-bottom: 5px;
+}
+.header h1{
+   
+    font-size: 25px;
+    margin-left: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+.container{
+    width: 440px;
+    background: #154360 ;
+    border-radius: 5px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 5px 5px 10px;
+}
+
+.inputs{
+
+    color: white;
+    background-color: transparent; 
+    border: 1px solid white;
+    width: 370px;
+    padding: 5px;
+    
+    margin-top: 5px;
+    margin-left: 24px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.form-control.success input{
+border-color: green;
+}
+
+.form-control.error input{
+    border-color: red;
+}
+
+    
+.form-control.error small{
+        visibility: visible;
+}
+
+
+ small{
+
+    color: red;
+    margin-left: 24px;
+    
+    font-size: 16px;
+    visibility: hidden;
+    }
+
+
+.boton{
+    color: white;
+    background-color: black; 
+    
+    padding: 4px;
+    border-radius: 4px;     /*  si le aplico esto y las propiedades de color parece que no se presiona*/
+    margin-left: 39%;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    cursor: pointer;
+   
+}
+.footer p{
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin-top: 15px;
+  
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover{
+   /* text-decoration: underline;*/
+    color: black;
+}
+label{
+    color: white;
+    margin-left: 25px;
+    
+  
+}

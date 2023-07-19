@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="jpg" href="logo-icon.png">
+    <meta charset="utf-8">
+    <title>Pagina</title>
+    <link rel="stylesheet" href="estiloi.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Crear cuenta</h1>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label>Nombre</label>
+                <input type="text" class="inputs" id="nombre" placeholder="Ingrese su nombre">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Apellido</label>
+                <input type="text" class="inputs" id="apellido" placeholder="Ingrese su apellido">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" class="inputs" id="email" placeholder="Ingrese su correo electrónico">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Número de cédula</label>
+                <input type="number" class="inputs" id="cedula" placeholder="Ingrese su número de cédula">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Contraseña</label>
+                <input type="password" class="inputs" id="contrasena" placeholder="Ingrese su contraseña">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Confirmación de la contraseña</label>
+                <input type="password" class="inputs" id="confirmacion" placeholder="confirmación de la contraseña">
+                <small>Error message</small>
+            </div>
+            <footer class="footer">
+                <p>Estoy de acuerdo con los <a href="#">términos y condiciones</a></p>
+                <button type="submit" class="boton" onclick="redireccionar()">Registrarse</button>
+                <!--<input type="submit" value="Registrarse" class="boton" > -->
+                <p><a href="indexi.html">¿Ya tengo una cuenta?</a></p>
+            </footer>
+        </form>
+    </div>
+    <script src="codigo.js"></script>
+</body>
+</html>

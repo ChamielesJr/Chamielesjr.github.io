@@ -1,0 +1,94 @@
+ul, ol {
+    list-style:none;
+  }
+  .nav > li {
+    float:right;
+
+  }
+  .nav li a {
+    background-color:rgb(41, 70, 116);
+    color:#fff;
+    text-decoration:none;
+    padding:37px 50px;
+    display:block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .nav li a:hover{
+    background-color: rgb(20, 113, 200);
+  }
+  body {
+    margin: 0;
+    padding:    0;
+    background-image: url(Fondo.jpg);
+    background-size: cover;
+}
+
+.cuadros{
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.conte .card{
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.conte .card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.conte .card img{
+  width: 330px;
+  height: 220px;
+}
+
+
+.conte .card h4{
+  font-weight: 600;
+}
+
+.conte .card p{
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.conte .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: blue;
+}
+
+  .container1 p{
+    text-align: center;
+    color:black;
+    font-family:'Baloo Tamma 2', sans-serif;
+}
+  .container1 h2{
+    text-align: center;
+    color:black(255, 255, 255);
+    font-family:'Baloo Tamma 2', sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;    
+    margin-bottom: 25px;
+}
+
+.footer, .header {
+    background:rgb(41, 70, 116);
+}
+
+.header{
+position: relative;
+
+}
+

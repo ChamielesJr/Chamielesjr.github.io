@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="jpg" href="logo-icon.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio Estudiantes</title>
+    <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+  </head>
+  <body bgcolor="white">    
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>                 
+    <header class="header"> 
+    <div class="container">
+        <nav class="menu">
+
+            <ul class ="nav">
+                <li> <a href="./indexi.html"> Cerrar sesion </a> </li>
+                <li> <a href="./informacionestudiante.html"> Informacion </a> </li>
+                <li> <a href="./acercade.html"> Acerca de </a> </li>
+                <li> <a href="./homestudiante.html"> Inicio </a> </li>
+             </ul>
+             <figure class="logo">
+                <img  width='105'src="logo-icon.png" alt="Tutorships"/>          
+            </figure> 
+        </nav> 
+       </div>
+    </header>
+    <header class="cuadros">
+       <!--Desde este punto trabajamos el contendio de la página-->
+    <h1 class="title">Primeras Ofertas Laborales</h1>
+    <div class="conte">
+        <div class="card">
+            <img src="JS.jpg" alt="imagen" >
+            <h4>Developer web</h4>
+            <p>De manera simple, un developer web es un programador que se especializa o dedica gran parte de su tiempo al desarrollo de aplicaciones para la World Wide Web, utilizando un modelo cliente-servidor. </p>
+            <a href="https://rootstack.com/es/blog/como-ser-developer-web">Leer más</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onclick="mostrarAlerta('Oferta 1')">Postular</a>
+        </div>
+
+        <div class="card">
+            <img src="CSS.png" alt="imagen">
+            <h4>Backend</h4>
+            <p>Backend hace referencia a todos aquellos elementos de la página web, aplicación o programa, que son inaccesibles de cara a los usuarios.</p>
+            <a href="https://rafarjonilla.com/que-es/backend/">Leer más</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onclick="mostrarAlerta('Oferta 2')">Postular</a>
+        </div>
+
+         <div class="card">
+            <img src="html.jpg" alt="imagen">
+            <h4>Desarrolladores Android</h4>
+            <p>Entre sus funciones crear el código del sistema, hacer correcciones y pruebas y diseñar la base de datos de los programas a instalar en los dispositivos, como por ejemplo las apps.</p>
+            <a href="https://www2.deloitte.com/es/es/pages/human-capital/articles/Android-developer.html">Leer más</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onclick="mostrarAlerta('Oferta 3')">Postular</a>
+        </div>
+        <div class="card">
+          <img src="RED.png" alt="imagen" >
+          <h4>Computacion y Redes</h4>
+          <p>Crear y gestionar sistemas informáticos, páginas web, juegos y hasta algunos componentes de dispositivos.crear y gestionar sistemas informáticos, tales como programas de trabajo, páginas web, juegos y hasta algunos componentes de dispositivos.</p>
+          <a href="https://humanidades.com/redes-de-computadoras/">Leer más</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onclick="mostrarAlerta('Oferta 4')">Postular</a>
+      </div>
+      </header>
+    <div class="container1">
+        <footer class="footer"> 
+            <p style="color:white" class="text2">Aplicaciones Web I </p>
+            <p style="color:white" class="text2">Proyecto Final @2023</p>
+          </footer>
+    </div>
+
+    <script>
+      function mostrarAlerta(oferta) {
+        var respuesta = confirm('¿Desea postularse a la oferta ' + oferta + '?');
+        if (respuesta) {
+          window.location.href = 'Postulaciòn.html?oferta=' + oferta;
+        }
+      }
+    </script>
+  </body>
+</html>
